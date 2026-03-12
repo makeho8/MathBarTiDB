@@ -1,0 +1,8 @@
+streamlit
+gspread
+google-auth
+google-generativeai>=0.7.2
+matplotlib
+pandas
+numpy
+# Force Update 1
