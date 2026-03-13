@@ -8,7 +8,8 @@ st.set_page_config(page_title="My Stats", page_icon="📊")
 # --- 1. SAFETY CHECK (Crucial!) ---
 # If the user refreshes this page directly, 'xp' might not exist yet.
 # We re-initialize it here just in case.
-if "xp" not in st.session_state:
+# Kiểm tra: Nếu xp chưa có, HOẶC xp không phải là dạng từ điển (dict) thì mới tạo lại
+if "xp" not in st.session_state or not isinstance(st.session_state.xp, dict):
     st.session_state.xp = {
         "Advanced Math": 0,
         "Specialized Math": 0,
@@ -78,4 +79,5 @@ if st.button("🔄 Reset All Progress"):
     for key in st.session_state.xp:
         st.session_state.xp[key] = 0
     st.rerun()
+
 
