@@ -6,4 +6,6 @@ matplotlib
 pandas
 numpy
 mysql-connector-python
+plotly
 # Force Update 1
+
