@@ -5,4 +5,5 @@ google-generativeai>=0.7.2
 matplotlib
 pandas
 numpy
+mysql-connector-python
 # Force Update 1
