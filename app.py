@@ -116,14 +116,15 @@ with t1:
     st.caption("See who is top of the class.")
 
 with t2:
-    st.page_link("pages/9_🤖_AI_Tutor.py", label="AI Tutor", icon="🤖", use_container_width=True)
-    st.caption("Ask Gemini or GPT4All.")
-
-with t3:
     st.page_link("pages/10_📊_My_Stats.py", label="My Stats", icon="📊", use_container_width=True)
     st.caption("Track your skill radar.")
 
+with t3:
+    st.page_link("pages/9_🤖_AI_Tutor.py", label="AI Tutor", icon="🤖", use_container_width=True)
+    st.caption("Ask Gemini or GPT4All.")
+    
 with t4:
     st.page_link("pages/99_test_AI.py", label="Test AI Tutor", icon="🩺", use_container_width=True)
     st.caption("Ask models available.")
+
 
