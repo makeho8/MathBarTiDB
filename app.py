@@ -124,7 +124,8 @@ with t3:
     st.caption("Ask Gemini or GPT4All.")
     
 with t4:
-    st.page_link("pages/99_test_AI.py", label="Test AI Tutor", icon="🩺", use_container_width=True)
+    st.page_link("pages/99_Test_AI.py", label="Test AI Tutor", icon="🩺", use_container_width=True)
     st.caption("Ask models available.")
+
 
 
