@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import io
 
 st.set_page_config(page_title="Teacher Dashboard", page_icon="👨‍🏫", layout="wide")
 
@@ -88,3 +89,19 @@ try:
 
 except Exception as e:
     st.error(f"⚠️ Không thể tải dữ liệu: {e}")
+
+# --- 6. TẢI DỮ LIỆU EXCEL
+st.divider()
+st.subheader("📥 Xuất Dữ Liệu")
+# Tạo một bộ nhớ đệm để lưu file Excel
+buffer = io.BytesIO()
+# Ghi dữ liệu từ DataFrame (df) vào file Excel trong bộ nhớ đệm
+with pd.ExcelWriter(buffer, engine='openpyxl') as writer:
+    df.to_excel(writer, sheet_name='Diem_MathBar', index=False)
+# Nút tải xuống
+st.download_button(
+    label="Tải file Excel (.xlsx)",
+    data=buffer.getvalue(),
+    file_name="Danh_Sach_Diem_MathBar.xlsx",
+    mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+)
