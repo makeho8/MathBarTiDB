@@ -26,7 +26,7 @@ if "xp" not in st.session_state:
     }
 
 # Helper to calculate Total XP (Sum of all subjects)
-total_xp = sum(st.session_state.xp.values())
+#total_xp = sum(st.session_state.xp.values())
 
 # 3. --- SIDEBAR (Detailed Subject Breakdown) ---
 with st.sidebar:
