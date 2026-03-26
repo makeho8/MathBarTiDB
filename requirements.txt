@@ -9,5 +9,6 @@ mysql-connector-python
 plotly
 sqlalchemy
 pymysql
+openpyxl
 # Force Update 1
 
