@@ -108,8 +108,8 @@ st.divider()
 # 🏆 SECTION 2: STUDENT HUB (The 3 Tools)
 st.subheader("🏆 Student Hub")
 
-# Now we have exactly 3 tools, so they fit perfectly in one row!
-t1, t2, t3, t4 = st.columns(4)
+# Now we have exactly 5 tools, so they fit perfectly in one row!
+t1, t2, t3, t4, t5 = st.columns(5)
 
 with t1:
     st.page_link("pages/8_🏆_Leaderboard.py", label="Leaderboard", icon="🏆", use_container_width=True)
@@ -122,10 +122,12 @@ with t2:
 with t3:
     st.page_link("pages/9_🤖_AI_Tutor.py", label="AI Tutor", icon="🤖", use_container_width=True)
     st.caption("Ask Gemini or GPT4All.")
-    
+
 with t4:
     st.page_link("pages/99_Test_AI.py", label="Test AI Tutor", icon="🩺", use_container_width=True)
     st.caption("Ask models available.")
 
-
+with t5:
+    st.page_link("pages/98_🧑🏻‍🏫_Teacher_Dashboard.py", label="Teacher Dashboard", icon="🧑🏻‍🏫", use_container_width=True)
+    st.caption("Teacher Data Analysis.")
 
