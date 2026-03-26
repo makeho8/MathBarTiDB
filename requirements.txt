@@ -8,5 +8,6 @@ numpy
 mysql-connector-python
 plotly
 sqlalchemy
+pymysql
 # Force Update 1
 
