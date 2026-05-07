@@ -10,5 +10,5 @@ plotly
 sqlalchemy
 pymysql
 openpyxl
+scipy
 # Force Update 1
-
